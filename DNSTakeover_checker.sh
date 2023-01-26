@@ -13,7 +13,7 @@ NC='\033[0m'
 #Help Func
 Help()
 {
-echo -e "${BLUE}[*] Syntax: .${CYAN}/DNStakeover_checker.sh -d example.com${NC} or ${PURPLE}bash DNStakeover_checker.sh -d example.com${NC}" 
+echo -e "${BLUE}[*] Syntax: ${CYAN}./DNStakeover_checker.sh -d example.com${NC} or ${PURPLE}bash DNStakeover_checker.sh -d example.com${NC}" 
 
 }
 
