@@ -1,6 +1,6 @@
 # DNS Takeover Checker
 
-Simple bash script based on the @projectdiscovery article :relaxed:(https://blog.projectdiscovery.io/guide-to-dns-takeovers/) to detect DNS takeover. 
+Simple bash script based on the @projectdiscovery article to detect DNS takeover. :relaxed:(https://blog.projectdiscovery.io/guide-to-dns-takeovers/)
 
 ## Usage:
 ./DNStakeover_checker.sh -d example.com
