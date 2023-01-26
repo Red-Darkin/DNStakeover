@@ -13,7 +13,7 @@ NC='\033[0m'
 #Help Func
 Help()
 {
-echo -e "${BLUE}[*] Syntax: .${CYAN}/DNStakeover_check -d example.com${NC} or ${PURPLE}bash DNStakeover_check -d example.com${NC}" 
+echo -e "${BLUE}[*] Syntax: .${CYAN}/DNStakeover_checker.sh -d example.com${NC} or ${PURPLE}bash DNStakeover_checker.sh -d example.com${NC}" 
 
 }
 
@@ -51,4 +51,4 @@ while getopts ":hd:" option; do
 done
 
 #For read files run the next command:
-#for i in $(cat domain.txt); do echo "$i:"; bash DNSTakeover_check -d $i; done
+#for i in $(cat domain.txt); do echo "$i:"; bash DNSTakeover_checker.sh -d $i; done
