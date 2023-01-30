@@ -21,7 +21,7 @@ echo -e "${BLUE}[*] Syntax: ${CYAN}./DNStakeover_checker.sh -d example.com${NC} 
 #Program Func
 Check()
 {
-ns_name=$(dig $domain +trace | grep "ns" | awk '{print $5}' | grep -v "from" | sort -u > NS_record)
+ns_name=$(dig $domain +trace | grep -E "ns[0-9]|ns-[0-9]|*\.ns|ns-*\.*\.*" | grep -v "NSEC3" | grep -v "global" | grep -v "Received" | awk '{print $5}' | sort -u > NS_record)
 
 for i in $(cat NS_record); 
         do
